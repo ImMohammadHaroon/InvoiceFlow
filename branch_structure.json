@@ -1,0 +1,45 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "feat/00-bootstrap",
+    "feat/01-ui-shell",
+    "feat/02-types-fixtures",
+    "feat/03-supabase-setup",
+    "feat/04-invoice-api",
+    "feat/05-invoice-list",
+    "feat/06-invoice-detail",
+    "feat/07-approve-reject",
+    "feat/08-polish-docs",
+    "main",
+    "origin",
+    "ui-bug"
+  ],
+  "parent": {
+    "feat/00-bootstrap": "main",
+    "feat/01-ui-shell": "main",
+    "feat/02-types-fixtures": "main",
+    "feat/03-supabase-setup": "main",
+    "feat/04-invoice-api": "main",
+    "feat/05-invoice-list": "main",
+    "feat/06-invoice-detail": "main",
+    "feat/07-approve-reject": "main",
+    "feat/08-polish-docs": "main",
+    "main": null,
+    "origin": "main",
+    "ui-bug": "main"
+  },
+  "order": [
+    "main",
+    "feat/00-bootstrap",
+    "feat/01-ui-shell",
+    "feat/02-types-fixtures",
+    "feat/03-supabase-setup",
+    "feat/04-invoice-api",
+    "feat/05-invoice-list",
+    "feat/06-invoice-detail",
+    "feat/07-approve-reject",
+    "feat/08-polish-docs",
+    "origin",
+    "ui-bug"
+  ]
+}
