@@ -1,0 +1,164 @@
+[
+  {
+    "vendorName": "Westside Electric Co.",
+    "invoiceNumber": "INV-1040",
+    "invoiceDate": "2026-09-18",
+    "dueDate": "2026-10-18",
+    "status": "processing",
+    "isDuplicate": false,
+    "tax": 0,
+    "items": [
+      {
+        "description": "Temporary power distribution",
+        "quantity": 1,
+        "unitPrice": 4200,
+        "amount": 4200
+      },
+      {
+        "description": "LED site lighting fixtures",
+        "quantity": 24,
+        "unitPrice": 85,
+        "amount": 2040
+      },
+      {
+        "description": "Cable tray installation labor",
+        "quantity": 16,
+        "unitPrice": 95,
+        "amount": 1520
+      }
+    ]
+  },
+  {
+    "vendorName": "Summit Structural Steel",
+    "invoiceNumber": "INV-1041",
+    "invoiceDate": "2026-09-20",
+    "dueDate": "2026-10-20",
+    "status": "processing",
+    "isDuplicate": false,
+    "tax": 0,
+    "items": [
+      {
+        "description": "W12x58 steel beams",
+        "quantity": 8,
+        "unitPrice": 980,
+        "amount": 7840
+      },
+      {
+        "description": "Connection hardware kit",
+        "quantity": 4,
+        "unitPrice": 320,
+        "amount": 1280
+      }
+    ]
+  },
+  {
+    "vendorName": "Apex Plumbing & Mechanical",
+    "invoiceNumber": "INV-1043",
+    "invoiceDate": "2026-09-23",
+    "dueDate": "2026-10-23",
+    "status": "needs_review",
+    "isDuplicate": false,
+    "tax": 0,
+    "items": [
+      {
+        "description": "Cast iron drain piping",
+        "quantity": 120,
+        "unitPrice": 42,
+        "amount": 5040
+      },
+      {
+        "description": "Commercial water heater",
+        "quantity": 1,
+        "unitPrice": 2850,
+        "amount": 2850
+      },
+      {
+        "description": "Rough-in labor",
+        "quantity": 32,
+        "unitPrice": 110,
+        "amount": 3520
+      }
+    ]
+  },
+  {
+    "vendorName": "Pacific Concrete Supply",
+    "invoiceNumber": "INV-1042",
+    "invoiceDate": "2026-09-22",
+    "dueDate": "2026-10-22",
+    "status": "needs_review",
+    "isDuplicate": true,
+    "tax": 0,
+    "items": [
+      {
+        "description": "Ready-mix concrete",
+        "quantity": 40,
+        "unitPrice": 180,
+        "amount": 7200
+      },
+      {
+        "description": "Concrete pump rental",
+        "quantity": 1,
+        "unitPrice": 2250,
+        "amount": 2250
+      },
+      {
+        "description": "Delivery",
+        "quantity": 3,
+        "unitPrice": 1000,
+        "amount": 3000
+      }
+    ]
+  },
+  {
+    "vendorName": "Northline Drywall Systems",
+    "invoiceNumber": "INV-1038",
+    "invoiceDate": "2026-09-10",
+    "dueDate": "2026-10-10",
+    "status": "approved",
+    "isDuplicate": false,
+    "tax": 0,
+    "items": [
+      {
+        "description": "5/8\" Type X drywall sheets",
+        "quantity": 200,
+        "unitPrice": 18.5,
+        "amount": 3700
+      },
+      {
+        "description": "Metal stud framing",
+        "quantity": 450,
+        "unitPrice": 6.25,
+        "amount": 2812.5
+      },
+      {
+        "description": "Tape and finish labor",
+        "quantity": 40,
+        "unitPrice": 85,
+        "amount": 3400
+      }
+    ]
+  },
+  {
+    "vendorName": "Cascade Roofing Materials",
+    "invoiceNumber": "INV-1035",
+    "invoiceDate": "2026-09-05",
+    "dueDate": "2026-10-05",
+    "status": "rejected",
+    "isDuplicate": false,
+    "tax": 0,
+    "items": [
+      {
+        "description": "TPO membrane roofing",
+        "quantity": 8500,
+        "unitPrice": 1.85,
+        "amount": 15725
+      },
+      {
+        "description": "Insulation board R-30",
+        "quantity": 420,
+        "unitPrice": 22,
+        "amount": 9240
+      }
+    ]
+  }
+]
