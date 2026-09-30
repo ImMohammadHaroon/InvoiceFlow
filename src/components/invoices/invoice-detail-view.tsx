@@ -1,19 +1,27 @@
 "use client";
 
+import { InvoiceActions } from "@/components/invoices/invoice-actions";
 import { InvoiceDetails } from "@/components/invoices/invoice-details";
 import { InvoiceItems } from "@/components/invoices/invoice-items";
 import { NotesCard } from "@/components/invoices/notes-card";
 import { VendorDetails } from "@/components/invoices/vendor-details";
 import { DuplicateBadge, StatusBadge } from "@/components/ui/badge";
-import type { Invoice } from "@/types/invoice";
+import type { Invoice, InvoiceStatus } from "@/types/invoice";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 interface InvoiceDetailViewProps {
   invoice: Invoice;
 }
 
-export function InvoiceDetailView({ invoice }: InvoiceDetailViewProps) {
+export function InvoiceDetailView({ invoice: initial }: InvoiceDetailViewProps) {
+  const [invoice, setInvoice] = useState(initial);
+
+  function handleStatusChange(status: InvoiceStatus) {
+    setInvoice((current) => ({ ...current, status }));
+  }
+
   return (
     <div className="space-y-6">
       <Link
@@ -35,6 +43,11 @@ export function InvoiceDetailView({ invoice }: InvoiceDetailViewProps) {
           </div>
           <p className="mt-2 text-sm text-gray-500">{invoice.vendorName}</p>
         </div>
+
+        <InvoiceActions
+          invoice={invoice}
+          onStatusChange={handleStatusChange}
+        />
       </div>
 
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1.4fr)_minmax(280px,0.8fr)]">
