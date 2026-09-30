@@ -29,12 +29,12 @@ export function AppSidebar({ counts }: AppSidebarProps) {
   const activeStatus = searchParams.get("status");
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const invoicesActive = pathname.startsWith("/invoices") || pathname === "/";
+  const invoicesActive = pathname.startsWith("/invoices");
 
   const content = (
     <aside className="flex h-full w-64 flex-col bg-[var(--sidebar)] text-white">
       <div className="px-4 py-5">
-        <Link href="/" onClick={() => setMobileOpen(false)}>
+        <Link href="/invoices" onClick={() => setMobileOpen(false)}>
           <Image
             src="/logo.png"
             alt="InvoiceFlow"
@@ -48,7 +48,7 @@ export function AppSidebar({ counts }: AppSidebarProps) {
 
       <nav className="space-y-1 px-3">
         <Link
-          href="/"
+          href="/invoices"
           onClick={() => setMobileOpen(false)}
           className={cn(
             "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
@@ -68,7 +68,7 @@ export function AppSidebar({ counts }: AppSidebarProps) {
         </p>
         <div className="mt-3 space-y-1">
           {filters.map((filter) => {
-            const href = `/?status=${filter.key}`;
+            const href = `/invoices?status=${filter.key}`;
             const isActive = activeStatus === filter.key;
 
             return (
