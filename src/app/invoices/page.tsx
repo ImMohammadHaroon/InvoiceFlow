@@ -1,5 +1,6 @@
 import { AppShell } from "@/components/layout/app-shell";
 import { InvoiceSummaryCards } from "@/components/invoices/invoice-summary";
+import { InvoiceTabs } from "@/components/invoices/invoice-tabs";
 import { InvoiceTable } from "@/components/invoices/invoice-table";
 import { Card } from "@/components/ui/card";
 import { listInvoices } from "@/lib/invoice-service";
@@ -73,6 +74,11 @@ export default async function InvoicesPage({ searchParams }: PageProps) {
         ) : (
           <>
             <InvoiceSummaryCards summary={result.summary} />
+            <InvoiceTabs
+              active={status ?? "all"}
+              counts={result.counts}
+              searchQuery={params.q?.trim()}
+            />
             <InvoiceTable invoices={invoices} filter={status ?? "all"} />
           </>
         )}
